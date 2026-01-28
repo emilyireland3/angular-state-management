@@ -1,8 +1,8 @@
 import { Routes } from '@angular/router';
 import { Home } from './internal/home';
-import { HomePage } from './internal/pages/homes';
+import { HomePage } from './internal/pages/home';
 
-export const lab1FeatureRoutes: Routes = [
+export const lab1Routes: Routes = [
   {
     path: '',
     providers: [],
