@@ -31,7 +31,15 @@ export const routes: Routes = [
   {
     path: 'counting',
     loadChildren: () =>
-      import('./areas/demos/counting-landing/counting-landing/counting.routes').then((r) => r.countingFeatureRoutes),
+      import('./areas/demos/counting-landing/counting-landing/counting.routes').then(
+        (r) => r.countingFeatureRoutes,
+      ),
+  },
+
+  {
+    path: 'lab1',
+    loadChildren: () =>
+      import('./areas/labs/lab1-landing/lab1.routes').then((r) => r.lab1FeatureRoutes),
   },
   {
     path: '**',
